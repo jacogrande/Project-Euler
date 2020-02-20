@@ -19,7 +19,7 @@ const fibonacci = (last_n, n) => {
     }
 
     // recursively iterate through the fibonacci sequence
-    answer(n, new_number);
+    fibonacci(n, new_number);
   }
 
   // on base case, display the sum
