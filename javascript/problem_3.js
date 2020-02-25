@@ -13,7 +13,7 @@ const largestPrime = (target) => {
   while(!finished){
     finished = true;
 
-    // check each number to see if its a factor of
+    // check each number to see if its a factor of the dividend
     for( let i = 2; i < dividend; i++){
       if (dividend % i === 0){
         if( prime_factors.indexOf(i) === -1) prime_factors.push(i);
@@ -24,6 +24,7 @@ const largestPrime = (target) => {
     }
   }
 
+  // the remaining quotient must be prime
   if( prime_factors.indexOf(dividend) === -1) prime_factors.push(dividend);
 
   let largest = prime_factors.reduce( (sum, elem) => elem > sum ? elem : sum);
