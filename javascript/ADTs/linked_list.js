@@ -1,8 +1,8 @@
 // Singly linked list data type
 
-// LinkedList constructor with dataType specification
 class LinkedList {
 
+  // LinkedList constructor with dataType specification
   constructor(dataType = null){
     this.dataType = dataType;
     this.head = null;
@@ -95,7 +95,7 @@ class LinkedList {
       displayArray.push(current.data);
       current = current.next;
     }
-    console.log(displayArray);
+    return displayArray;
   }
 
 }
