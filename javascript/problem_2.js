@@ -29,4 +29,10 @@ const fibonacci = (last_n, n) => {
 
 }
 
+
+const Timer = require("./timer.js");
+Timer.start();
 fibonacci(1, 2);
+Timer.end();
+
+// solved in ~ 3.15 ms

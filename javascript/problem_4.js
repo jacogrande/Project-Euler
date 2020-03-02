@@ -1,6 +1,4 @@
 // Find the largest palindrome made from the product of two 3-digit numbers.
-const Timer = require("./timer.js");
-
 
 // Function for determining whether or not a number is a palindrome
 const isPalindrome = (number) => {
@@ -42,9 +40,10 @@ const findPalindrome = (digits) => {
 
 }
 
-let timer = new Timer();
-timer.start();
 
+const Timer = require("./timer.js");
+Timer.start();
 console.log(findPalindrome(3));
+Timer.end();
 
-console.log(`This took ${timer.end()}`);
+// solved in ~ 20.7 ms

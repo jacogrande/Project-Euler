@@ -9,9 +9,9 @@ class Timer {
   }
 
   end() {
-    return `${process.hrtime(this.time)[1] / 1000000} ms`;
+    console.log(`Time ellapsed: ${process.hrtime(this.time)[1] / 1000000} ms`);
   }
 
 }
 
-module.exports = Timer;
+module.exports = new Timer();

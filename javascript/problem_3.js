@@ -23,6 +23,7 @@ const largestPrime = (target) => {
       }
     }
   }
+  console.log("epic");
 
   // the remaining quotient must be prime
   if( prime_factors.indexOf(dividend) === -1) prime_factors.push(dividend);
@@ -32,4 +33,7 @@ const largestPrime = (target) => {
 
 }
 
+const Timer = require("./timer.js");
+Timer.start();
 largestPrime(600851475143);
+Timer.end();

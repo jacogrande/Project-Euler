@@ -21,4 +21,8 @@ const multiples = () => {
 
 }
 
+const Timer = require("./timer.js");
+Timer.start();
 multiples();
+Timer.end();
+// solved in ~ 3.25 ms

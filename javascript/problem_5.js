@@ -1,8 +1,6 @@
 // 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 // What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-const Timer = require("./timer.js");
-
 // function for finding the smallest positive number divisible by all numbers from 1 to rangeMaximum (20)
 const findDividend = () => {
 
@@ -36,10 +34,9 @@ const findDividend = () => {
 
 }
 
-let timer = new Timer();
 
-timer.start();
+const Timer = require("./timer.js");
+Timer.start();
 console.log(findDividend());
-console.log(`This took ${timer.end()}`);
-// solved:  232792560
-// ~ 53 ms
+Timer.end();
+// solved in ~ 53 ms

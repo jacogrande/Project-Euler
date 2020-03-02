@@ -1,7 +1,5 @@
 // Find the sum of all the primes below two million.
 
-const Timer = require("./timer.js");
-
 // function that returns the sum of all primes below the max number using a variation of the Sieve of Eratosthenes
 const sumOfPrimes = (max) => {
 
@@ -37,12 +35,7 @@ const isPrime = (i, primes, sum) => {
   return primes;
 }
 
-let timer = new Timer();
-timer.start();
-
+const Timer = require("./timer.js");
+Timer.start();
 console.log(sumOfPrimes(2000000));
-
-console.log(`Time ellapsed: ${timer.end()}`);
-
-// solved: 142913828922
-// ~ 114.611506 ms (sheeesh)
+Timer.end();

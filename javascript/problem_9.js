@@ -47,11 +47,7 @@ const findSum = (targetSum) => {
 }
 
 const Timer = require("./timer.js");
-let timer = new Timer();
-timer.start();
-
+Timer.start();
 console.log(findSum(1000));
-
-console.log(`Time ellapsed: ${timer.end()}`);
-// Solved: 31875000
-// ~ 3.3 ms
+Timer.end();
+// solved in ~ 3.3 ms

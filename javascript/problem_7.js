@@ -3,8 +3,6 @@
 // upper bound: 1.26*n*log(n)
 // solved using the Sieve of Eratosthenes
 
-const Timer = require("./timer.js");
-
 // main function
 const findPrime = (n) => {
   let max = Math.ceil(1.26*n*Math.log(n));
@@ -45,10 +43,9 @@ const sieve = (arr, n, max) => {
 
 }
 
-let timer = new Timer();
-timer.start();
+const Timer = require("./timer.js");
+Timer.start();
 console.log(findPrime(10001));
-console.log(`Time elapsed: ${timer.end()}`);
+Timer.end();
 
-// solved: 104743
-// ~ 20 ms
+// solved in ~ 20 ms
